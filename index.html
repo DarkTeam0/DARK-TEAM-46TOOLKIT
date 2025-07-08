@@ -183,11 +183,10 @@
 
   <audio id="welcomeAudio" src="welcome.mp3"></audio>
 
-  <!-- Background Video -->
-  <video id="bgVideo" autoplay loop controls>
-    <source src="background.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+  <video id="bgVideo" autoplay muted loop playsinline>
+  <source src="background.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
 
   <script>
     // Loader timeout
