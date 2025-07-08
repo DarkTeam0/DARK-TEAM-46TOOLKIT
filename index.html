@@ -39,6 +39,16 @@
       animation: pulse 2s infinite;
     }
 
+#bgVideo {
+  position: fixed;
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(1.5) contrast(1.2);
+}
     @keyframes pulse {
       0% { box-shadow: 0 0 15px #00ff00; }
       50% { box-shadow: 0 0 40px #00ff00; }
