@@ -162,29 +162,6 @@
     <img src="loading.jpg" alt="Loading...">
   </div>
 
-<!-- Background Video -->
-  <video id="bgVideo" autoplay muted loop playsinline>
-    <source src="background.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-
-  <!-- Audio Welcome -->
-  <audio id="mySound" src="welcome.mp3"></audio>
-
-  <!-- Page Content -->
-  <img src="meri-pic.jpg" alt="Top Pic" class="top-pic" />
-  <h1>WELCOME TO DARK TEAM 46 TOOLKIT</h1>
-
-  <script>
-    window.onload = function() {
-      // Hide loader
-      document.getElementById('loader').style.display = 'none';
-
-      // Play welcome audio
-      var audio = document.getElementById('mySound');
-      audio.play().catch(()=>{});
-    }
-
   <!-- Login Page -->
   <div id="loginPage" style="display:none;">
     <h1>DARK TEAM 46 LOGIN</h1>
@@ -214,6 +191,11 @@
         document.getElementById("loginPage").style.display = "flex";
       }, 3000);
     }
+<!-- Background Video -->
+  <video id="bgVideo" autoplay muted loop playsinline>
+    <source src="background.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
 
     function checkPassword() {
       const pass = document.getElementById("passwordInput").value;
