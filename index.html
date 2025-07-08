@@ -190,11 +190,22 @@
 </div>
 
   <!-- Toolkit Page -->
-  <div id="toolkitPage" style="display:none;">
-  <img src="meri-pic.jpg" alt="Logo" style="width:120px;border-radius:50%;margin-bottom:20px;box-shadow:0 0 15px #00ff00;">
+<div id="toolkitPage" style="display:none;">
   <h1>WELCOME TO DARK TEAM 46 TOOLKIT</h1>
-  ...
+  <div class="buttons-wrapper" id="buttonsContainer">
+    <a class="tool-button" href="https://chat.whatsapp.com/Fvse6ODkgMM4if2vTp4LXX" target="_blank">1 WHATSAPP</a>
+    <a class="tool-button" href="https://chat.whatsapp.com/Fvse6ODkgMM4if2vTp4LXX" target="_blank">2 INSTAGRAM</a>
+    <a class="tool-button" href="https://chat.whatsapp.com/Fvse6ODkgMM4if2vTp4LXX" target="_blank">3 TIKTOK</a>
+    <a class="tool-button" href="https://chat.whatsapp.com/Fvse6ODkgMM4if2vTp4LXX" target="_blank">4 BOT</a>
+    <a class="tool-button" href="https://chat.whatsapp.com/Fvse6ODkgMM4if2vTp4LXX" target="_blank">5 92PKR</a>
+    <a class="tool-button" href="https://chat.whatsapp.com/Fvse6ODkgMM4if2vTp4LXX" target="_blank">6 92JEETO</a>
+    <a class="tool-button" href="https://chat.whatsapp.com/Fvse6ODkgMM4if2vTp4LXX" target="_blank">7 ZAINK</a>
+    <a class="tool-button" href="https://chat.whatsapp.com/Fvse6ODkgMM4if2vTp4LXX" target="_blank">8 AFAQUE</a>
+    <a class="tool-button" href="https://chat.whatsapp.com/Fvse6ODkgMM4if2vTp4LXX" target="_blank">9 ALIKHAN</a>
+    <a class="tool-button" href="https://chat.whatsapp.com/Fvse6ODkgMM4if2vTp4LXX" target="_blank">10 HASSAN</a>
+  </div>
 </div>
+
   <audio id="welcomeAudio" src="welcome.mp3"></audio>
 
   <video id="bgVideo" autoplay muted loop playsinline>
@@ -220,17 +231,6 @@
       } else {
         alert("Wrong Password!");
       }
-    }
-
-    // Populate 300 buttons
-    const container = document.getElementById("buttonsContainer");
-    for (let i = 1; i <= 300; i++) {
-      const btn = document.createElement("a");
-      btn.href = "https://example.com";
-      btn.target = "_blank";
-      btn.className = "tool-button";
-      btn.innerText = "TOOL " + i;
-      container.appendChild(btn);
     }
 
     function filterButtons() {
