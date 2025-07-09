@@ -293,16 +293,21 @@
       }, 3000);
     }
 
-    function checkPassword() {
-      const pass = document.getElementById("passwordInput").value;
-      if (pass === "AKHACKER 3.0") {
-        document.getElementById("loginPage").style.display = "none";
-        document.getElementById("toolkitPage").style.display = "flex";
-        document.getElementById("welcomeAudio").play();
-      } else {
-        alert("Wrong Password!");
-      }
+    <audio id="songAudio" src="song.mp3" loop></audio>
+
+<script>
+  function checkPassword() {
+    const pass = document.getElementById("passwordInput").value;
+    if (pass === "AKHACKER 3.0") {
+      document.getElementById("loginPage").style.display = "none";
+      document.getElementById("toolkitPage").style.display = "flex";
+      document.getElementById("songAudio").volume = 0.5;
+      document.getElementById("songAudio").play();
+    } else {
+      alert("Wrong Password!");
     }
+  }
+</script>
 
     function filterButtons() {
       const input = document.getElementById("searchBar").value.toLowerCase();
