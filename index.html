@@ -291,6 +291,8 @@
   Your browser does not support HTML5 video.
 </video>
 
+ <audio id="songAudio" src="song.mp3" loop></audio>
+
   <script>
   window.onload = () => {
     setTimeout(() => {
@@ -298,11 +300,8 @@
       document.getElementById("loginPage").style.display = "flex";
     }, 3000);
   }
-</script>
+ <audio id="songAudio" src="song.mp3" loop></audio>
 
-    <audio id="songAudio" src="song.mp3" loop></audio>
-
-<script>
   function checkPassword() {
     const pass = document.getElementById("passwordInput").value;
     if (pass === "AKHACKER 3.0") {
